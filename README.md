@@ -4,7 +4,7 @@ node-noop
 Provides a few global functions such as `noop`, `throwop`, and `doop`
 
     npm install noop
-    requir('noop');
+    require('noop');
 
 API
 ====
