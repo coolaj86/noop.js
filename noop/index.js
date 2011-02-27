@@ -1,7 +1,5 @@
-function getGlobal() {
-  return this;
-}
-
+var provide = provide || function () {},
+  global = this;
 (function () {
   "use strict";
 
@@ -21,18 +19,9 @@ function getGlobal() {
     }
   }
 
-  var global = getGlobal();
   global.noop = noop;
   global.throwop = throwop;
   global.doop = doop;
-  /*
-  module.exports = {
-    noop: noop,
-    throwop: throwop,
-    doop: doop
-  };
-  */
   
-  if ('undefined' === typeof provide) { provide = function() {}; }
   provide('noop');
 }());

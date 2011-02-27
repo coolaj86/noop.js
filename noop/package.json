@@ -6,7 +6,5 @@
   "author"        : "AJ ONeal <coolaj86@gmail.com>",
   "contributors"  : [],
   "dependencies"  : [],
-  "lib"           : "lib",
-  "main"          : "./lib/index",
-  "version"       : "0.2.0"
+  "version"       : "0.2.1"
 }
