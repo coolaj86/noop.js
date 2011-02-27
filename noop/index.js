@@ -1,7 +1,11 @@
-var provide = provide || function () {},
-  global = this;
+var provide = provide || function () {};
+function getGlobal () {
+  return this;
+}
 (function () {
   "use strict";
+
+  var global = getGlobal();
 
   function noop() {
     // do nothing
