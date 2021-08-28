@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Provides a few global functions such as `noop`, `throwop`, and `doop`",
   "main": "index.js",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "node test.js"
   },
@@ -11,11 +13,20 @@
     "type": "git",
     "url": "git+https://github.com/coolaj86/noop.js.git"
   },
-  "keywords": ["util", "noop", "throwop", "doop", "no-op"],
+  "keywords": [
+    "util",
+    "noop",
+    "throwop",
+    "doop",
+    "no-op"
+  ],
   "author": "AJ ONeal <coolaj86@gmail.com> (https://coolaj86.com/)",
   "license": "MIT OR CC0-1.0",
   "bugs": {
     "url": "https://github.com/coolaj86/noop.js/issues"
   },
-  "homepage": "https://github.com/coolaj86/noop.js#readme"
+  "homepage": "https://github.com/coolaj86/noop.js#readme",
+  "devDependencies": {
+    "@types/node": "^16.7.4"
+  }
 }
