@@ -1,0 +1,10 @@
+{
+  "esversion": 11,
+  "node": true,
+  "curly": true,
+  "globals": {
+    "noop": true,
+    "throwop": true,
+    "doop": true
+  }
+}
