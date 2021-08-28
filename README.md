@@ -1,39 +1,54 @@
-node-noop
-====
+# node-noop
 
 Provides a few global functions such as `noop`, `throwop`, and `doop`
 
-    npm install noop
-    require('noop');
+```bash
+npm install noop@v1
+```
 
-API
-====
+```js
+require("noop");
+```
 
-`global.noop`
-----
+# Features
+
+- [x] Works with Promises and Thunks
+- [x] Faster than `Object` (always `true`-y)
+- [x] More predictable than `Boolean` (sometimes `false`-y)
+- [x] Linted with TypeScript, JSHint, and Prettier
+
+# API
+
+## `global.noop`
 
 Does nothing
 
-    function noop() {}
+```js
+function noop() {}
+```
 
-`global.throwop(err)`
-----
+## `global.throwop(err)`
 
-Throws if `err` is defined
+Throws if `err` is `true`-y
 
-    function throwop(err) {
-      if (err) {
-        throw err;
-      }
-    }
+```js
+function throwop(err) {
+  if (err) {
+    throw err;
+  }
+}
+```
 
-`global.doop(callback)`
-----
+## `global.doop(callback)`
 
 Calls `callback` or `noop`
 
-    function doop(callback, args, context) {
-      if ('function' === typeof callback) {
-        callback.apply(context, args);
-      }
-    }
+```js
+function doop(callback, args, context) {
+  if ("function" === typeof callback) {
+    callback.apply(context, args);
+  }
+}
+```
+
+Similar function signature to `setTimeout`.
