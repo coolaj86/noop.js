@@ -1,6 +1,6 @@
 {
   "name": "noop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides a few global functions such as `noop`, `throwop`, and `doop`",
   "main": "index.js",
   "files": [
